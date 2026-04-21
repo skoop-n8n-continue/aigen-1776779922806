@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Digital Signage Calendar</title>
+    <link rel="stylesheet" href="styles.css?v=cal2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="sidebar">
+            <div class="clock-section">
+                <div id="digital-clock" class="clock">00:00:00</div>
+                <div id="current-date-long" class="date-long">Monday, January 1</div>
+            </div>
+            <div class="upcoming-events">
+                <h3>Upcoming Events</h3>
+                <div id="event-list" class="event-list">
+                    <!-- Events will be populated by JS -->
+                </div>
+            </div>
+        </header>
+        <main class="calendar-container">
+            <div class="calendar-header">
+                <h2 id="month-year-display">January 2026</h2>
+            </div>
+            <div class="calendar-grid">
+                <div class="day-names">
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                </div>
+                <div id="calendar-days" class="days">
+                    <!-- Days will be populated by JS -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js?v=cal2026"></script>
+</body>
+</html>
